@@ -1,0 +1,210 @@
+.work {
+  max-width: 1100px;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    color: #64ffda;
+    margin: 10px 0 40px;
+
+    & > span {
+      color: #fff;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 300px;
+      height: 1px;
+      margin-left: 20px;
+      background-color: #112240;
+    }
+  }
+
+  &__projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__project {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  &__project-img-container {
+    position: relative;
+    grid-column: 1 / 7;
+    width: 120%;
+    border-radius: 15px;
+    transition: all 1s;
+    opacity: 0.4;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #112240;
+      z-index: 1;
+
+    }
+    &:hover {
+      transform: scale(1.03);
+      opacity: 1;
+    }
+  }
+
+  &__project-img-container2 {
+    position: relative;
+    grid-column: 6 / -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 1s;
+    opacity: 0.4;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #112240;
+      z-index: 1;
+
+    }
+    &:hover {
+      transform: scale(1.03);
+      opacity: 1;
+    }
+  }
+
+  &__project-img {
+    position: relative;
+    grid-column: 1 / 7;
+    width: 100%;
+    transition: all 1s;
+    z-index: 2;
+  }
+
+  &__project-desc {
+    grid-column: 7 / -1;
+    text-align: right;
+  }
+
+  &__project-desc2 {
+    position: absolute;
+    grid-column: 1 / 7;
+    text-align: left;
+  }
+
+  &__project-github {
+    background-image: url(/images/github.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: all 1s;
+    margin: 0 15px;
+
+    &:hover {
+      transform: scale(2);
+      transition: all 1s;
+    }
+  }
+
+  &__project-link {
+    background-image: url(/images/link.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(2);
+      transition: all 1s;
+    }
+  }
+
+  &__project-overline {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: .2rem;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #64ffda;
+  }
+
+  &__project-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(24px, 5vw, 28px);
+    font-weight: 500;
+    margin: 0 0 20px;
+    color: #ccd6f6;
+  }
+
+  &__project-content {
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    transition: all 2s;
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #112240;
+    color: #a8b2d1;
+    font-size: 15px;
+  }
+
+  &__project-techs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  &__project-techs2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  &__project-tech {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 0 10px;
+    color: #a8b2d1;
+    letter-spacing: .1rem;
+  }
+
+  &__project-provide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 25px 0;
+  }
+
+  &__project-provide2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 25px 0;
+  }
+
+
+}

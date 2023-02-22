@@ -1,7 +1,13 @@
-@import "utils";
-@import "fonts";
-@import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "./blocks/nav";
+@import "./resets";
+@import "./blocks/hero";
+@import "./blocks/header";
+@import "./blocks/page";
+@import "./blocks/animation";
+@import "./blocks/main-page";
+@import "./blocks/about";
+@import "./blocks/experience";
+@import "./blocks/work";
+@import "./blocks/contact";
+@import "./blocks/scroll-bar";
+@import "./blocks/footer";

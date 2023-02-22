@@ -1,0 +1,178 @@
+.page {
+  &__left-icons {
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: #a8b2d1;
+    width: 40px;
+
+    & > ul::after {
+      content: '';
+      display: block;
+      background-color: #ccd6f6;
+      height: 90px;
+      margin: 27px auto 0;
+      width: 2px;
+    }
+
+    & > ul > li {
+      padding: 10px;
+    }
+  }
+
+  &__right {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 40px;
+    left: auto;
+    z-index: 10;
+    color: #a8b2d1;
+    width: 40px;
+
+    & > a {
+      font-family: 'inter', sans-serif;
+      font-size: 15px;
+      color: #a8b2d1;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transition: all 0.5s;
+
+      &:hover {
+        color: #64ffda;
+        font-size: 16px;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: #ccd6f6;
+      height: 90px;
+      margin: 27px auto 0;
+      width: 2px;
+    }
+  }
+
+  &__left-icons-twitter {
+    background-image: url(/images/twitter.svg);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(2);
+      transition: all 1s;
+    }
+  }
+
+  &__left-icons-facebook {
+    background-image: url(/images/facebook.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(2);
+      transition: all 1s;
+    }
+  }
+  &__left-icons-github {
+    background-image: url(/images/github.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(2);
+      transition: all 1s;
+    }
+  }
+
+  &__left-icons-linkedin {
+    background-image: url(/images/linkedin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(2);
+      transition: all 1s;
+    }
+  }
+  &__left-icons-whatsapp {
+    background-image: url(/images/whatsapp.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(2);
+      transition: all 1s;
+    }
+  }
+
+  &__loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #112240;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeOut 7s ease-in-out forwards;
+  }
+
+  &__loader-text {
+    font-size: 60px;
+    font-weight: bold;
+    color: #64ffda;
+    animation: slide-in 3s ease-out forwards;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+}
