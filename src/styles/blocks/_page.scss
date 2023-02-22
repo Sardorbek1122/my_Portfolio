@@ -9,7 +9,7 @@
     width: 40px;
 
     & > ul::after {
-      content: '';
+      content: "";
       display: block;
       background-color: #ccd6f6;
       height: 90px;
@@ -36,7 +36,7 @@
     width: 40px;
 
     & > a {
-      font-family: 'inter', sans-serif;
+      font-family: "inter", sans-serif;
       font-size: 15px;
       color: #a8b2d1;
       writing-mode: vertical-rl;
@@ -50,7 +50,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       background-color: #ccd6f6;
       height: 90px;
