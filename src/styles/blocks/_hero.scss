@@ -50,4 +50,26 @@
       background-color: #046552;
     }
   }
+
+  @media (max-width: 999px) {
+
+    &__name {
+      font-size: 15px;
+      margin: 0 0 8px 4px;
+    }
+
+    &__big-heading {
+      font-size: 35px;
+    }
+
+    &__desc {
+      font-size: 15px;
+    }
+
+    &__button {
+      @include fontParams(14px, 10px, 500);
+      margin-top: 20px;
+      padding: 1rem;
+    }
+  }
 }

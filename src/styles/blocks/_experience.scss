@@ -103,4 +103,19 @@
   //     color: #64ffda;
   //   }
   // }
+
+  @media (max-width: 999px) {
+    &__heading {
+      @include fontParams(25px, 15px, 600);
+
+      &::after {
+        width: 150px;
+      }
+    }
+
+    &__inner {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
 }

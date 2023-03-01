@@ -1,9 +1,10 @@
 @import "./blocks/nav";
 @import "./resets";
+@import "./mixins.scss";
+@import "./animation.scss";
 @import "./blocks/hero";
 @import "./blocks/header";
 @import "./blocks/page";
-@import "./blocks/animation";
 @import "./blocks/main-page";
 @import "./blocks/about";
 @import "./blocks/experience";

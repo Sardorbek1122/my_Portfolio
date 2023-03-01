@@ -31,8 +31,7 @@
   }
 
   &__inner {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+    display: flex;
     gap: 50px;
   }
 
@@ -94,6 +93,12 @@
       color: #64ffda;
       font-size: var(--fz-sm);
       line-height: 12px;
+    }
+  }
+
+  @media (max-width: 999px) {
+    &__inner {
+      flex-direction: column;
     }
   }
 }

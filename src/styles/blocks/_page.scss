@@ -175,4 +175,14 @@
       transform: scale(1);
     }
   }
+
+  @media (max-width: 999px) {
+    &__left-icons {
+      display: none;
+    }
+
+    &__right {
+      display: none;
+    }
+  }
 }
