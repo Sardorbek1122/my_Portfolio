@@ -9,7 +9,7 @@
     width: 40px;
 
     & > ul::after {
-      content: '';
+      content: "";
       display: block;
       background-color: #ccd6f6;
       height: 90px;
@@ -36,7 +36,7 @@
     width: 40px;
 
     & > a {
-      font-family: 'inter', sans-serif;
+      font-family: "inter", sans-serif;
       font-size: 15px;
       color: #a8b2d1;
       writing-mode: vertical-rl;
@@ -50,7 +50,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       background-color: #ccd6f6;
       height: 90px;
@@ -164,7 +164,6 @@
     0% {
       opacity: 0;
       transform: scale(1);
-
     }
     50% {
       opacity: 1;
@@ -173,6 +172,23 @@
     100% {
       opacity: 0;
       transform: scale(1);
+    }
+  }
+
+  @media (max-width: 999px) {
+    &__left-icons {
+      display: none;
+    }
+
+    &__right {
+      display: none;
+    }
+  }
+
+  @media (max-width: 999px) {
+    &__loader-text {
+      font-size: 30px;
+      font-weight: bold;
     }
   }
 }
