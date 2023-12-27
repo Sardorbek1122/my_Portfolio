@@ -1,4 +1,8 @@
 .main-page {
   padding: 0 150px;
   background-color: #0a192f;
+
+  @media (max-width: 999px) {
+    padding: 0 50px;
+  }
 }
